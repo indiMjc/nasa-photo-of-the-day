@@ -18,7 +18,6 @@ function App() {
         "https://api.nasa.gov/planetary/apod?api_key=LHhD6UH1gC3c1EJyebHbf3UBgaoOZBbH3loKthxz"
       )
       .then(response => {
-        console.log(response);
         setDate(response.data.date);
         setImage(response.data.url);
         setTitle(response.data.title);

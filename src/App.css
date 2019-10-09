@@ -21,8 +21,54 @@
 }
 
 #menu {
+  /* position: absolute;
+  left: 0; */
+  transform: translateX(-600px);
+  background: white;
+  border: none;
+  color: #282c34;
+  font-size: 20px;
+  width: 80px;
+}
+
+#hidden-button {
+  transform: translateX(-530px);
+  background: white;
+  border: none;
+  color: #282c34;
+  font-size: 20px;
+  width: 80px;
+}
+
+/* .visible {
   position: absolute;
   left: 0;
+  transform: translateY(235px);
+  height: 75vh;
+  width: 240px;
+  background-color: #282c34;
+} */
+
+#drop-down {
+  position: absolute;
+  left: 0;
+  transform: translateY(235px);
+  min-height: 75vh;
+  width: 240px;
+  background-color: #282c34;
+}
+
+.not-visible {
+  display: none;
+}
+
+.show-button {
+  transform: translateX(-600px);
+  background: white;
+  border: none;
+  color: #282c34;
+  font-size: 20px;
+  width: 80px;
 }
 
 .App-link {
