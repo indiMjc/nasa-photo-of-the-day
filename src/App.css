@@ -21,8 +21,6 @@
 }
 
 #menu {
-  /* position: absolute;
-  left: 0; */
   transform: translateX(-600px);
   background: white;
   border: none;
@@ -52,7 +50,7 @@
 #drop-down {
   position: absolute;
   left: 0;
-  transform: translateY(235px);
+  transform: translateY(335px);
   min-height: 75vh;
   width: 240px;
   background-color: #282c34;
@@ -82,4 +80,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.new-image {
+  transform: translate(400px, 350px);
 }

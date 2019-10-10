@@ -7,10 +7,10 @@ import ImageTitle from "./components/imageTitle/ImageTitle";
 import ImgExplanation from "./components/imgExplanation/ImgExplanation";
 
 function App() {
+  const [date, setDate] = useState([]);
   const [image, setImage] = useState([]);
   const [title, setTitle] = useState([]);
   const [explanation, setExplanation] = useState([]);
-  const [date, setDate] = useState([]);
 
   useEffect(() => {
     axios
@@ -30,7 +30,10 @@ function App() {
 
   return (
     <div className="App">
-      <PageHeader date={date} />
+      <PageHeader
+        states={[setDate, setImage, setTitle, setExplanation]}
+        date={date}
+      />
       <DailyImage imgSrc={image} />
       <ImageTitle title={title} />
       <ImgExplanation info={explanation} />

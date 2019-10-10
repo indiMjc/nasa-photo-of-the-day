@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import DropDown from "./DropDown";
+import Dates from "./Dates";
 
-const Menu = () => {
+const Menu = props => {
   const [vis, setVis] = useState("not-visible");
 
   return (
@@ -21,7 +21,9 @@ const Menu = () => {
         Close
       </button>
       {/* <DropDown visiblity={vis} /> */}
-      <div className={vis} id="drop-down"></div>
+      <div className={vis} id="drop-down">
+        <Dates states={props.states} />
+      </div>
     </>
   );
 };
