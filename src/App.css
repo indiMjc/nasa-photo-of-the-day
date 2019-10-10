@@ -2,11 +2,18 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  max-height: 100vh;
+  min-height: 100vh;
+  background-image: repeating-radial-gradient(
+    circle,
+    black,
+    grey 15%,
+    white 10%
+  );
 }
 
 .card-container {
   width: 30vw;
+  background-color: white;
 }
 
 .App-logo {
