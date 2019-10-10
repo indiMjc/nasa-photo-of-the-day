@@ -47,6 +47,10 @@
   background-color: #282c34;
 }
 
+#drop-down h5 {
+  cursor: pointer;
+}
+
 .not-visible {
   display: none;
 }

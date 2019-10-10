@@ -19,7 +19,6 @@ const Dates = props => {
         `https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${theDate}`
       )
       .then(response => {
-        console.log(response);
         props.states[0](response.data.date);
         props.states[1](response.data.url);
         props.states[2](response.data.title);
