@@ -38,19 +38,10 @@
   width: 80px;
 }
 
-/* .visible {
-  position: absolute;
-  left: 0;
-  transform: translateY(235px);
-  height: 75vh;
-  width: 240px;
-  background-color: #282c34;
-} */
-
 #drop-down {
   position: absolute;
   left: 0;
-  transform: translateY(335px);
+  top: 0;
   min-height: 75vh;
   width: 240px;
   background-color: #282c34;
@@ -80,8 +71,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.new-image {
-  transform: translate(400px, 350px);
 }
