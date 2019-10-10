@@ -1,10 +1,10 @@
 import React from "react";
-import Menu from "../menu/Menu";
+import Dates from "../menu/Dates";
 
 const PageHeader = props => {
   return (
     <div className="App-header">
-      <Menu states={props.states} />
+      <Dates states={props.states} />
       <h3>Image for {props.date}</h3>
     </div>
   );

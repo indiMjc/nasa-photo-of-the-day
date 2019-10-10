@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <PageHeader
-        states={[setDate, setImage, setTitle, setExplanation]}
+        states={[setDate, setImage, setTitle, setExplanation, date]}
         date={date}
       />
       <DailyImage imgSrc={image} />
