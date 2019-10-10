@@ -1,8 +1,9 @@
 import React from "react";
+import { CardImg } from "reactstrap";
 
 const DailyImage = props => {
   return (
-    <img className="image" alt="NASA Ph0to Of The Day" src={props.imgSrc} />
+    <CardImg className="image" alt="NASA Ph0to Of The Day" src={props.imgSrc} />
   );
 };
 

@@ -1,7 +1,8 @@
 import React from "react";
+import { CardTitle } from "reactstrap";
 
 const ImageTitle = props => {
-  return <h1>{props.title}</h1>;
+  return <CardTitle>{props.title}</CardTitle>;
 };
 
 export default ImageTitle;

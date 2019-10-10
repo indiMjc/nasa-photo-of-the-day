@@ -1,7 +1,8 @@
 import React from "react";
+import { CardText } from "reactstrap";
 
 const ImgExplanation = props => {
-  return <p>{props.info}</p>;
+  return <CardText>{props.info}</CardText>;
 };
 
 export default ImgExplanation;

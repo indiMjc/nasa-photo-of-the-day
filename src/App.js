@@ -5,6 +5,15 @@ import PageHeader from "./components/pageHeader/PageHeader";
 import DailyImage from "./components/dailyImage/DailyImage";
 import ImageTitle from "./components/imageTitle/ImageTitle";
 import ImgExplanation from "./components/imgExplanation/ImgExplanation";
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  Button
+} from "reactstrap";
 
 function App() {
   const [date, setDate] = useState([]);
@@ -30,13 +39,15 @@ function App() {
 
   return (
     <div className="App">
-      <PageHeader
-        states={[setDate, setImage, setTitle, setExplanation]}
-        date={date}
-      />
-      <DailyImage imgSrc={image} />
-      <ImageTitle title={title} />
-      <ImgExplanation info={explanation} />
+      <div className="card-container">
+        <PageHeader
+          states={[setDate, setImage, setTitle, setExplanation]}
+          date={date}
+        />
+        <DailyImage imgSrc={image} />
+        <ImageTitle title={title} />
+        <ImgExplanation info={explanation} />
+      </div>
     </div>
   );
 }
